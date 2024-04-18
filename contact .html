@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="../Desktop/new project.css">
+    <nav>
+    <ul>
+        <li><a href="../Desktop/new project.html">Home</a></li>
+        <li><a href="../Desktop/about us.html">About Us</a></li>
+        <li><a href="../Desktop/services.html">Services</a></li>
+        <li><a href="../Desktop/contact .html">Contact</a></li>
+    </ul>
+    </nav>
+    <style>
+        .contact-form {
+            background-color: rgb(192, 84, 183);
+            max-width: 4000px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #772121;
+            border-radius: 5px;
+        }
+        .contact-form label,
+        .contact-form input,
+        .contact-form textarea,
+        .contact-form button {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            background-color: #f9fbfd;
+            color: rgb(158, 46, 46);
+            border: none;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #e4e7e7;
+        }
+    </style>
+</head>
+<body>
+
+<div class="contact-form">
+    <h2>Contact Sculpt & Sizzle Fitness</h2>
+    <p>For any enquiries, please fill out the form below:</p>
+    <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+<h2>FOR MORE INFO</h2>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        .icon {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Contact Us</h1>
+    <ul id="contact-list">
+        <!-- Contacts will be dynamically added here -->
+    </ul>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const contacts = [
+            {
+                iconClass: 'fab fa-whatsapp',
+                label: 'WhatsApp',
+                link: 'https://wa.me/1234567890',
+                text: '0786540098'
+            },
+            {
+                iconClass: 'far fa-envelope',
+                label: 'Email',
+                link: 'mailto:info@example.com',
+                text: 'info@Sculpt&SizzleFitness.co.za '
+            },
+            {
+                iconClass: 'fas fa-phone-alt',
+                label: 'Call',
+                link: 'tel:+1234567890',
+                text: '011 497 4187'
+            },
+            {
+                iconClass: 'fas fa-map-marker-alt',
+                label: 'Location',
+                link: 'https://goo.gl/maps/1234567890',
+                text: 'Sunninghill Office Park, Building, 20 Peltier Dr Sunninghill  '
+            }
+        ];
+
+        const contactList = document.getElementById('contact-list');
+
+        contacts.forEach(contact => {
+            const listItem = document.createElement('li');
+            const iconSpan = document.createElement('span');
+            const icon = document.createElement('i');
+            const link = document.createElement('a');
+
+            icon.className = contact.iconClass;
+            iconSpan.className = 'icon';
+            iconSpan.appendChild(icon);
+
+            link.href = contact.link;
+            link.target = '_blank';
+            link.innerText = `${contact.label}: ${contact.text}`;
+
+            listItem.appendChild(iconSpan);
+            listItem.appendChild(link);
+
+            contactList.appendChild(listItem);
+        });
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../Desktop/1st\ page.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: #fa1dc3;
+    color: #d32323;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 20px; 
+}
+
+.services-section { 
+    background-color: rgba(185, 21, 21, 0.8);
+    border-radius: 10px; 
+}
+
+footer {
+    background-color: #f11571;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Page-specific Styles */
+h1, h2, p {
+    color: #fcfbfb;
+}
+.contact-form {
+    background-color: aqua;
+    max-width: 4000px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #772121;
+    border-radius: 5px;
+}
+.contact-form label,
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.contact-form button {
+    background-color: #007bff;
+    color: rgb(158, 46, 46);
+    border: none;
+    cursor: pointer;
+}
+.contact-form button:hover {
+    background-color: #4c8ace;
+}
